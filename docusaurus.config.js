@@ -81,7 +81,7 @@ const config = {
             items: [
               {
                 label: "CleanCode",
-                to: "/docs/chapter-01",
+                to: "/docs/chapter-02",
               },
               {
                 label: "Member",
