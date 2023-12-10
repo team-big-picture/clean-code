@@ -19,12 +19,11 @@ jobs:
       - name: Install dependencies
         run: npm install --frozen-lockfile
       - name: Build website
-        run: npm build
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_ACTIONS_TOKEN }}
-          publish_dir: ./build
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
