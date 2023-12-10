@@ -14,7 +14,7 @@ const config = {
   url: "https://team-big-picture.github.io",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  baseUrl: "/",
+  baseUrl: "/clean-code/",
   organizationName: "team-big-picture",
   projectName: "clean-code",
 
