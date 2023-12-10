@@ -12,6 +12,8 @@ const config = {
   tagline: "클린코드 스터디",
   favicon: "img/favicon.ico",
   url: "https://team-big-picture.github.io",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
   baseUrl: "/clean-code/",
   organizationName: "team-big-picture",
   projectName: "clean-code",
@@ -53,15 +55,15 @@ const config = {
         },
         items: [
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            type: "doc",
+            docId: "chapter_1",
             position: "left",
-            label: "Tutorial",
+            label: "클린코드 스터디",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          { to: "/blog", label: "👨‍👩‍👧‍👦 참여자", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
+            href: "https://github.com/team-big-picture/clean-code",
+            label: "⛳️ GitHub",
             position: "right",
           },
         ],
@@ -75,36 +77,6 @@ const config = {
               {
                 label: "Tutorial",
                 to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
               },
             ],
           },
