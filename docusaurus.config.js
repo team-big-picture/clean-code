@@ -14,7 +14,7 @@ const config = {
   url: "https://team-big-picture.github.io",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  baseUrl: "/clean-code/",
+  baseUrl: "/",
   organizationName: "team-big-picture",
   projectName: "clean-code",
 
@@ -75,8 +75,16 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "CleanCode",
+                to: "/docs/chapter-01",
+              },
+              {
+                label: "Member",
+                href: "/blog/member",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/team-big-picture/clean-code",
               },
             ],
           },
