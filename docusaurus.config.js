@@ -83,10 +83,10 @@ const config = {
                 label: "CleanCode",
                 to: "/docs/chapter-02",
               },
-              {
-                label: "Member",
-                href: "/blog/member",
-              },
+              // {
+              //   label: "Member",
+              //   href: "/blog/member",
+              // },
               {
                 label: "GitHub",
                 href: "https://github.com/team-big-picture/clean-code",
