@@ -1,31 +1,30 @@
 name: documentation
 
 on:
-  pull_request:
-    branches: [main]
   push:
-    branches: [main]
+    branches:
+      - main
+
 jobs:
   deploy:
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
         with:
-          node-version: 12.x
+          node-version: 19.9.0 # version setting
+          cache: npm
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install dependencies
+        run: npm install --frozen-lockfile
+      - name: Build website
+        run: npm build
 
-      - name: Build Docs
-        run: npm run build
-
-      - name: Deploy Docs
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_ACTIONS_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./build
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
