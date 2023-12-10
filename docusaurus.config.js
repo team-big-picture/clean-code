@@ -56,7 +56,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "chapter_1",
+            docId: "chapter-02",
             position: "left",
             label: "클린코드 스터디",
           },
