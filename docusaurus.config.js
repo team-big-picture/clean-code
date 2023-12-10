@@ -11,28 +11,10 @@ const config = {
   title: "clean code",
   tagline: "클린코드 스터디",
   favicon: "img/favicon.ico",
-
-  // Set the production url of your site here
   url: "https://team-big-picture.github.io",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-
   baseUrl: "/clean-code/",
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "team-big-picture", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
-
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
-  },
+  organizationName: "team-big-picture",
+  projectName: "clean-code",
 
   presets: [
     [
@@ -49,7 +31,7 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://team-big-picture.github.io/clean-code/",
+          editUrl: "https://team-big-picture.github.io/clean-code",
         },
         theme: {
           customCss: "./src/css/custom.css",
