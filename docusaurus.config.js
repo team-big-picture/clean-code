@@ -18,6 +18,11 @@ const config = {
   organizationName: "team-big-picture",
   projectName: "clean-code",
 
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en"],
+  },
+
   presets: [
     [
       "classic",
